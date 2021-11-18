@@ -6,6 +6,10 @@
   background-color: blue;
 }
 
+.title {
+  background-color: white;
+}
+
 .question-box {
   box-shadow: 0px 2px 5px 0px rgba(19, 24, 44, 0.1);
   width: 80vw;
@@ -27,6 +31,7 @@
   justify-content: space-around;
   align-items: center;
   margin-bottom: 1rem;
+  border-radius: 4px;
   &__single {
     box-shadow: 0px 2px 5px 0px rgba(19, 24, 44, 0.1);
     border-radius: 4px;

@@ -29,7 +29,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Do You Crypto?</h1>
+        <h1 className="title">Do You Know Crypto?</h1>
         <article className="question-box">
           <h2>{this.state.currentQ.question}</h2>
           {this.state.finished && (
