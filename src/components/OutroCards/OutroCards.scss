@@ -1,0 +1,33 @@
+.card {
+  display: flex;
+  margin-left: 5%;
+  justify-content: space-evenly;
+  margin-bottom: 5%;
+  margin-top: 3%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  //   white-space: nowrap;
+
+  &__box {
+    border: 1px solid green;
+    border-radius: 12px;
+    width: 20%;
+    padding: 1%;
+  }
+
+  &__avatar {
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+  }
+
+  &__sub-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__txt {
+    margin-bottom: 5px;
+    width: 100%;
+  }
+}
