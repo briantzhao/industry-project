@@ -48,6 +48,7 @@
   flex-wrap: wrap;
   @include flex(space-between, center);
   margin-left: 2rem;
+  margin-bottom: 0;
   font-family: $bold;
   font-size: 1.2rem;
 }
@@ -61,7 +62,7 @@
 
 // Hero
 
-.hero {
+.intro__hero {
   height: 650px;
   width: 100%;
   background-color: $bg-green;
@@ -72,12 +73,12 @@ hr {
   border-top: 1px solid black;
 }
 
-h1 {
-  padding-left: 100px;
+.intro__hero-header {
+  margin-left: 100px;
   position: relative;
   font-size: 50px;
   font-family: $regular;
-  width: 40%;
+  width: 30%;
   padding-bottom: 40px;
   line-height: 60px;
 }
@@ -85,15 +86,17 @@ h1 {
 .top-header {
   font-size: 1.9rem;
   padding: 20px 25px;
+  text-align: left;
 }
 
 .top-header__caption {
+  text-align: left;
   padding-left: 100px;
   width: 40%;
   font-size: 1.5rem;
 }
 
-.hero__btn {
+.intro__hero-btn {
   background-color: #000;
   color: #fff;
   border-radius: 58px;
@@ -190,6 +193,7 @@ h1 {
 .card__q {
   font-size: 32px;
   font-family: $regular;
+  color: black;
 }
 
 .card__readmore {
