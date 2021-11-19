@@ -1,5 +1,9 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
 * {
   box-sizing: border-box;
+  font-family: $regular;
 }
 .quiz {
   text-align: center;
@@ -97,7 +101,7 @@
 .modal {
   position: relative;
   top: 15%;
-  left: 23%;
+  left: 18%;
   height: 360px;
   width: 820px;
   display: flex;
