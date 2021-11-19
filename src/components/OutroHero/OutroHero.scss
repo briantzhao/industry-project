@@ -9,6 +9,12 @@ h1 {
   background-color: #cdf360;
   border-bottom: none;
 
+  &__title {
+    width: 70%;
+    padding: 0;
+    margin-left: 15%;
+  }
+
   &__box {
     margin-top: 15%;
     flex-direction: column;

@@ -163,7 +163,6 @@ export default class HomePage extends React.Component {
         <br />
         <br />
         <br />
-        <Footer />
       </div>
     );
   }
