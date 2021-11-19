@@ -37,14 +37,17 @@ export default class QuizPage extends Component {
       //   this.setState({ points: this.state.points + 10 });
       // correct message (modal?)
       this.setState({ correct: true }, () => {
-        this.setState({ modalOpen: true });
-        if (this.state.current === this.state.questions.length - 1) {
-          this.setState({ finished: true });
-          return;
-        }
-        this.setState({ current: this.state.current + 1 }, () => {
-          this.setState({ currentQ: this.state.questions[this.state.current] });
-          return;
+        this.setState({ modalOpen: true }, () => {
+          if (this.state.current === this.state.questions.length - 1) {
+            this.setState({ finished: true });
+            return;
+          }
+          //   this.setState({ current: this.state.current + 1 }, () => {
+          //     this.setState({
+          //       currentQ: this.state.questions[this.state.current],
+          //     });
+          //     return;
+          //   });
         });
       });
     } else {
@@ -52,6 +55,19 @@ export default class QuizPage extends Component {
         this.setState({ modalOpen: true });
       });
       // incorrect message and behavior
+    }
+  };
+
+  nextQuestion = () => {
+    if (this.state.correct) {
+      if (this.state.finished) {
+        return;
+      }
+      this.setState({ current: this.state.current + 1 }, () => {
+        this.setState({
+          currentQ: this.state.questions[this.state.current],
+        });
+      });
     }
   };
   //   pic1 = () => {
@@ -122,6 +138,7 @@ export default class QuizPage extends Component {
   };
 
   render() {
+    console.log(this.state.currentQ);
     return (
       <div className="quiz">
         <div className="progress__section">
@@ -165,7 +182,15 @@ export default class QuizPage extends Component {
                   <p className="modal__fact--true">
                     {this.state.currentQ.factRight}
                   </p>
-                  <div className="modal__vid"></div>
+                  {this.state.current === 0 && (
+                    <img className="answer-box__single__pic" src={pizza} />
+                  )}
+                  {this.state.current === 1 && (
+                    <img className="answer-box__single__pic" src={wallet} />
+                  )}
+                  {this.state.current === 2 && (
+                    <img className="answer-box__single__pic" src={bitcoin} />
+                  )}
                 </div>
               </div>
             ) : (
@@ -179,7 +204,9 @@ export default class QuizPage extends Component {
             <button
               className="modal__button"
               onClick={() => {
-                this.setState({ modalOpen: false });
+                this.setState({ modalOpen: false }, () => {
+                  this.nextQuestion();
+                });
               }}
             >
               {this.state.correct ? "Next Question" : "Try Again"}
