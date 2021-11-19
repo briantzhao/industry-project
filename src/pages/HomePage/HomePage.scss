@@ -119,40 +119,81 @@ h1 {
 
 .card1 {
   display: inline-block;
-  text-align: center;
   height: 500px;
   width: 300px;
   border-radius: 20px;
   margin: 0 20px;
-  padding: 20px;
-  font-size: 2rem;
+  padding: 45px 25px;
+  font-size: 32px;
   font-family: $regular;
   &-a {
-    background-color: $green;
+    background-color: #5ac23a;
+    background-image: url(../../assets/keychain.png);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: 100px 250px;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
   }
   &-b {
-    background-color: $darkpink;
+    background-color: #ec6687;
+    background-image: url(../../assets/wallet.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 0px 260px;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
   }
   &-c {
-    background-color: $lightpink;
+    background-color: #f3b2c4;
+    background-image: url(../../assets/cryptogirl.png);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: 80px 270px;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
   }
 }
 
 .card2 {
   display: inline-block;
-  text-align: center;
+  padding: 45px 25px;
   height: 500px;
   width: 300px;
   border-radius: 20px;
   margin: 0 20px;
-  padding: 20px;
+  font-size: 17px;
   &-a {
-    background-color: #5ac23a;
+    background-color: rgba(90, 194, 58, 0.5);
+    background-image: url(../../assets/keychain.png);
+    background-size: 180px;
+    background-repeat: no-repeat;
+    background-position: 100px 250px;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
   }
   &-b {
-    background-color: #ec6687;
+    background-color: #e8a5b5;
+    background-image: url(../../assets/wallet.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-position: 0px 260px;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
   }
   &-c {
-    background-color: #f3b2c4;
+    background-color: rgba(243, 178, 196, 0.5);
+    background-image: url(../../assets/cryptogirl.png);
+    background-size: 250px;
+    background-repeat: no-repeat;
+    background-position: 80px 270px;
+    box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
   }
+}
+
+.card__q {
+  font-size: 32px;
+  font-family: $regular;
+}
+
+.card__readmore {
+  font-size: 14px;
+  font-family: $bold;
+  text-decoration: underline;
+  color: #000;
 }

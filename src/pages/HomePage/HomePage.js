@@ -101,10 +101,21 @@ export default class HomePage extends React.Component {
             flipDirection="horizontal"
           >
             <div className="card1 card1-a" onClick={this.handleClick1}>
-              Hello
+              What is a <br />
+              Private Key?
             </div>
             <div className="card2 card2-a" onClick={this.handleClick1}>
-              Hello here are some fun facts about crypto
+              <p className="card__q">
+                {" "}
+                What is a <br />
+                Private Key?
+              </p>
+              <br /> Similar to a password - a private key is a string of
+              letters and numbers - that allows you to access and manage your
+              crypto funds.
+              <br />
+              <br />
+              <p className="card__readmore">Read More</p>
             </div>
           </ReactCardFlip>
           <ReactCardFlip
@@ -112,10 +123,20 @@ export default class HomePage extends React.Component {
             flipDirection="horizontal"
           >
             <div className="card1 card1-b" onClick={this.handleClick2}>
-              Hello
+              What is a <br />
+              Crypto Wallet?
             </div>
             <div className="card2 card2-b" onClick={this.handleClick2}>
-              Hello
+              <p className="card__q">
+                What is a <br />
+                Crypto Wallet?
+              </p>
+              <br />
+              Crypto wallets keep your private keys safe and accessible,
+              allowing you to send and receive cryptocurrencies.
+              <br />
+              <br />
+              <p className="card__readmore">Read More</p>
             </div>
           </ReactCardFlip>
           <ReactCardFlip
@@ -123,10 +144,16 @@ export default class HomePage extends React.Component {
             flipDirection="horizontal"
           >
             <div className="card1 card1-c" onClick={this.handleClick3}>
-              Hello
+              What is <br />
+              Crypto Mining?
             </div>
             <div className="card2 card2-c" onClick={this.handleClick3}>
-              Hello
+              <p className="card__q">What is Crypto Mining?</p>
+              <br /> Crypto mining refers to the process of gaining
+              cryptocurrencies as a reward for work that you complete solving
+              equations with the use of computers. <br />
+              <br />
+              <p className="card__readmore">Read More</p>
             </div>
           </ReactCardFlip>
         </article>
