@@ -1,92 +1,44 @@
 [
   {
-    "question": "question 1",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "2",
-    "fact": "The severed head of a sea slug can grow a whole new body."
-  },
-  {
-    "question": "question 2",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "3",
-    "fact": "The world's smallest reptile was first reported in 2021."
-  },
-  {
-    "question": "question 3",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "1",
-    "fact": "The feeling of getting lost inside a mall is known as the Gruen transfer."
-  },
-  {
-    "question": "question 4",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
+    "question": "Where do you store cryptocurrency?",
+    "answer1": "Savings account",
+    "picture1": "../../assets/bank.svg",
+    "answer2": "Cookie jar",
+    "picture2": "../../assets/cookiejar.svg",
+    "answer3": "Email inbox",
+    "picture3": "../../assets/email.svg",
+    "answer4": "Blockchain wallet",
+    "picture4": "../../assets/wallet.svg",
     "correct": "4",
-    "fact": "Humans are the only animals that blush."
+    "factRight": "The feeling of getting lost inside a mall is known as the Gruen transfer.",
+    "factWrong": "poop"
   },
   {
-    "question": "question 5",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "2",
-    "fact": "There's no such thing as pear cider."
-  },
-  {
-    "question": "question 6",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "2",
-    "fact": "Goosebumps are meant to ward off predators."
-  },
-  {
-    "question": "question 7",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "3",
-    "fact": "The moon has moonquakes."
-  },
-  {
-    "question": "question 8",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
+    "question": "What is the most actively traded crypto coin worldwide?",
+    "answer1": "Bitcoin",
+    "picture1": "../../assets/bitcoin.svg",
+    "answer2": "Ethereum",
+    "picture2": "../../assets/ethereum2.svg",
+    "answer3": "Tether",
+    "picture3": "../../assets/tether.svg",
+    "answer4": "Dogecoin",
+    "picture4": "../../assets/dogecoin2.svg",
     "correct": "1",
-    "fact": "The heads on Easter Island have bodies."
+    "factRight": "The world's smallest reptile was first reported in 2021.",
+    "factWrong": "poop"
   },
   {
-    "question": "question 9",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "4",
-    "fact": "Some sea snakes can breathe through their skin."
-  },
-  {
-    "question": "question 10",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "3",
-    "fact": "Many feet bones don't harden until you're an adult."
+    "question": "After Bitcoin, which of these is the most popular?",
+    "answer1": "Ethereum",
+    "picture1": "../../assets/ethereum.svg",
+    "answer2": "Dogecoin",
+    "picture2": "../../assets/dogecoin.svg",
+    "answer3": "Polkadot",
+    "picture3": "../../assets/polkadot.svg",
+    "answer4": "Shiba Inu",
+    "picture4": "../../assets/shibainu.svg",
+    "correct": "1",
+    "factRight": "The severed head of a sea slug can grow a whole new body.",
+    "factWrong": "poop"
   }
 ]
