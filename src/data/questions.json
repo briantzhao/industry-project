@@ -1,5 +1,19 @@
 [
   {
+    "question": "The first transaction ever made using crypto was to purchase...",
+    "answer1": "A car",
+    "picture1": "../../assets/ethereum.svg",
+    "answer2": "Two pizzas",
+    "picture2": "../../assets/dogecoin.svg",
+    "answer3": "Roses",
+    "picture3": "../../assets/polkadot.svg",
+    "answer4": "A vacation",
+    "picture4": "../../assets/shibainu.svg",
+    "correct": "2",
+    "factRight": "The first real-world transaction using cryptocurrency was made back in 2010. Based on current value today, over $50,000 USD was given in exchange for two pizzas. \n\nNowadays, crypto is useful in many more way than just for picking up a bite to eat.",
+    "factWrong": "poop"
+  },
+  {
     "question": "Where do you store cryptocurrency?",
     "answer1": "Savings account",
     "picture1": "../../assets/bank.svg",
@@ -25,20 +39,6 @@
     "picture4": "../../assets/dogecoin2.svg",
     "correct": "1",
     "factRight": "The world's smallest reptile was first reported in 2021.",
-    "factWrong": "poop"
-  },
-  {
-    "question": "After Bitcoin, which of these is the most popular?",
-    "answer1": "Ethereum",
-    "picture1": "../../assets/ethereum.svg",
-    "answer2": "Dogecoin",
-    "picture2": "../../assets/dogecoin.svg",
-    "answer3": "Polkadot",
-    "picture3": "../../assets/polkadot.svg",
-    "answer4": "Shiba Inu",
-    "picture4": "../../assets/shibainu.svg",
-    "correct": "1",
-    "factRight": "The severed head of a sea slug can grow a whole new body.",
     "factWrong": "poop"
   }
 ]

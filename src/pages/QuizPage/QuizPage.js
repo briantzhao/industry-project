@@ -15,6 +15,12 @@ import polkadot from "../../assets/polkadot.svg";
 import shibainu from "../../assets/shibainu.svg";
 import tether from "../../assets/tether.svg";
 import wallet from "../../assets/wallet.svg";
+import pizza from "../../assets/pizza.svg";
+import car from "../../assets/car.svg";
+import check from "../../assets/check icon.svg";
+import excl from "../../assets/excl icon.svg";
+import roses from "../../assets/roses.svg";
+import vacation from "../../assets/vacation.svg";
 
 export default class QuizPage extends Component {
   state = {
@@ -48,6 +54,51 @@ export default class QuizPage extends Component {
       // incorrect message and behavior
     }
   };
+  //   pic1 = () => {
+  //     switch (this.state.current) {
+  //       case 0:
+  //         return car;
+  //       case 1:
+  //         return bank;
+  //       case 2:
+  //         return bitcoin;
+  //       default:
+  //         return car;
+  //     }
+  //   };
+
+  //   pic2 = () => {
+  //     switch (this.state.current) {
+  //       case 0:
+  //         return pizza;
+  //       case 1:
+  //         return bank;
+  //       case 2:
+  //         return bitcoin;
+  //     }
+  //   };
+
+  //   pic3 = () => {
+  //     switch (this.state.current) {
+  //       case 0:
+  //         return roses;
+  //       case 1:
+  //         return email;
+  //       case 2:
+  //         return tether;
+  //     }
+  //   };
+
+  //   pic4 = () => {
+  //     switch (this.state.current) {
+  //       case 0:
+  //         return vacation;
+  //       case 1:
+  //         return wallet;
+  //       case 2:
+  //         return dogecoin;
+  //     }
+  //   };
 
   tryAgain = () => {
     this.setState({ currentQ: this.state.questions[0] });
@@ -74,7 +125,7 @@ export default class QuizPage extends Component {
     return (
       <div className="quiz">
         <div className="progress__section">
-          <p>
+          <p className="progress__title">
             Question {this.state.current + 1} of {this.state.questions.length}
           </p>
           <div className="progress-bar">
@@ -88,7 +139,7 @@ export default class QuizPage extends Component {
         </div>
         {/* <h1 className="title">Do You Know Crypto?</h1> */}
         <article className="question-box">
-          <h2>{this.state.currentQ.question}</h2>
+          <h2 className="title">{this.state.currentQ.question}</h2>
           {/* {this.state.finished && (
             <section className="question-box__results">
               <h1>Finish!</h1>
@@ -106,22 +157,27 @@ export default class QuizPage extends Component {
             ariaHideApp={false}
           >
             {this.state.correct ? (
-              <>
-                <h2 className="modal__title">Correct!</h2>
+              <div className="modal__main">
+                <h2 className="modal__title">
+                  <img className="modal__icon" src={check} /> Correct!
+                </h2>
                 <div className="modal__body">
-                  <p className="modal__fact">{this.state.currentQ.factRight}</p>
-                  <img className="modal__vid"></img>
+                  <p className="modal__fact--true">
+                    {this.state.currentQ.factRight}
+                  </p>
+                  <div className="modal__vid"></div>
                 </div>
-              </>
+              </div>
             ) : (
-              <>
-                <h2 className="modal__title">Almost...</h2>
-                <p className="modal__fact--wrong">
-                  {this.state.currentQ.factWrong}
-                </p>
-              </>
+              <div className="modal__main">
+                <h2 className="modal__title">
+                  <img className="modal__icon" src={excl} /> Almost...
+                </h2>
+                <p className="modal__fact">{this.state.currentQ.factWrong}</p>
+              </div>
             )}
             <button
+              className="modal__button"
               onClick={() => {
                 this.setState({ modalOpen: false });
               }}
@@ -145,10 +201,15 @@ export default class QuizPage extends Component {
               <p className="answer-box__single__title">
                 {this.state.currentQ.answer1}
               </p>
-              <img
-                className="answer-box__single__pic"
-                src={this.state.currentQ.picture1}
-              />
+              {this.state.current === 0 && (
+                <img className="answer-box__single__pic" src={car} />
+              )}
+              {this.state.current === 1 && (
+                <img className="answer-box__single__pic" src={bank} />
+              )}
+              {this.state.current === 2 && (
+                <img className="answer-box__single__pic" src={bitcoin} />
+              )}
             </section>
             <section
               className="answer-box__single"
@@ -163,10 +224,15 @@ export default class QuizPage extends Component {
               <p className="answer-box__single__title">
                 {this.state.currentQ.answer2}
               </p>
-              <img
-                className="answer-box__single__pic"
-                src={this.state.currentQ.picture2}
-              />
+              {this.state.current === 0 && (
+                <img className="answer-box__single__pic" src={pizza} />
+              )}
+              {this.state.current === 1 && (
+                <img className="answer-box__single__pic" src={cookiejar} />
+              )}
+              {this.state.current === 2 && (
+                <img className="answer-box__single__pic" src={ethereum} />
+              )}
             </section>
           </div>
           <div className="answer-box__row">
@@ -183,10 +249,15 @@ export default class QuizPage extends Component {
               <p className="answer-box__single__title">
                 {this.state.currentQ.answer3}
               </p>
-              <img
-                className="answer-box__single__pic"
-                src={this.state.currentQ.picture3}
-              />
+              {this.state.current === 0 && (
+                <img className="answer-box__single__pic" src={roses} />
+              )}
+              {this.state.current === 1 && (
+                <img className="answer-box__single__pic" src={email} />
+              )}
+              {this.state.current === 2 && (
+                <img className="answer-box__single__pic" src={tether} />
+              )}
             </section>
             <section
               className="answer-box__single"
@@ -201,10 +272,15 @@ export default class QuizPage extends Component {
               <p className="answer-box__single__title">
                 {this.state.currentQ.answer4}
               </p>
-              <img
-                className="answer-box__single__pic"
-                src={this.state.currentQ.picture4}
-              />
+              {this.state.current === 0 && (
+                <img className="answer-box__single__pic" src={vacation} />
+              )}
+              {this.state.current === 1 && (
+                <img className="answer-box__single__pic" src={wallet} />
+              )}
+              {this.state.current === 2 && (
+                <img className="answer-box__single__pic" src={dogecoin} />
+              )}
             </section>
           </div>
         </article>
