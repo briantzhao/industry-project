@@ -25,7 +25,7 @@
     "answer4": "Blockchain wallet",
     "picture4": "../../assets/wallet.svg",
     "correct": "4",
-    "factRight": "Your coins are stored in a digital wallet that ineracts with a blockchain - a network used to store information about cryptocurrency.",
+    "factRight": "Your coins are stored in a digital wallet that interacts with a blockchain - a network used to store information about cryptocurrency.",
     "factRight2": "These wallets can come in many different forms, with each having their own address to send and receive coins to and from.",
     "factWrong": "That's where you keep your hard-earned cash. Crypto is actually managed and stored a little bit differently..."
   },
