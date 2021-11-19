@@ -1,0 +1,36 @@
+h3 {
+  text-align: center;
+}
+
+.features {
+  &__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8%;
+  }
+
+  &__sub-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+
+    &--bot {
+      width: 90%;
+      margin-left: 5%;
+    }
+  }
+
+  &__sub-title {
+    font-size: 32px;
+    font-weight: bolder;
+  }
+
+  &__sub-txt {
+    font-size: 18px;
+    font-weight: bolder;
+    color: black;
+    margin-top: 10px;
+  }
+}
