@@ -2,6 +2,7 @@ import { Component } from "react";
 import questionList from "../../data/questions.json";
 import "./QuizPage.scss";
 import Modal from "react-modal";
+<<<<<<< HEAD
 import ProgressBar from "../../components/ProgressBar/ProgressBar";
 import bank from "../../assets/bank.svg";
 import bitcoin from "../../assets/bitcoin.svg";
@@ -21,6 +22,12 @@ import check from "../../assets/check icon.svg";
 import excl from "../../assets/excl icon.svg";
 import roses from "../../assets/roses.svg";
 import vacation from "../../assets/vacation.svg";
+=======
+
+// const ProgressBar = (props) => {
+//     const {bgcolor, completed}
+// }
+>>>>>>> develop
 
 export default class QuizPage extends Component {
   state = {
