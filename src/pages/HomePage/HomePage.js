@@ -2,6 +2,7 @@ import "./HomePage.scss";
 import ReactCardFlip from "react-card-flip";
 import React, { Component } from "react";
 import Logo from "../../assets/feather-logo.svg";
+import Footer from "../../components/Footer/Footer";
 
 export default class HomePage extends React.Component {
   state = {
@@ -129,6 +130,7 @@ export default class HomePage extends React.Component {
         <br />
         <br />
         <br />
+        <Footer />
       </div>
     );
   }

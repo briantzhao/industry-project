@@ -1,4 +1,4 @@
-import snacks from '../../assets/robinhood-snacks.svg';
+import snacks from '../../assets/images/robinhood-snacks.svg';
 export default function Subscribe(){
     return(
         <>
