@@ -24,6 +24,7 @@ import vacation from "../../assets/vacation.svg";
 import { Link } from "react-router-dom";
 import Footer from "../../components/Footer/Footer";
 import Logo from "../../assets/feather-logo.svg";
+import Arrow from "../../assets/downarrow.svg";
 
 export default class QuizPage extends Component {
   state = {
@@ -153,11 +154,20 @@ export default class QuizPage extends Component {
           <div className="topnav__list-container">
             <div>
               <ul className="topnav__list">
-                <li className="topnav__list">Products ⌄</li>
+                <li className="topnav__list">
+                  Products{" "}
+                  <img src={Arrow} alt="down arrow" className="topnav__arrow" />
+                </li>
 
-                <li className="topnav__list">Learn ⌄</li>
+                <li className="topnav__list">
+                  Learn{" "}
+                  <img src={Arrow} alt="down arrow" className="topnav__arrow" />
+                </li>
                 <li className="topnav__list">Support</li>
-                <li className="topnav__list">Who we are ⌄</li>
+                <li className="topnav__list">
+                  Who we are{" "}
+                  <img src={Arrow} alt="down arrow" className="topnav__arrow" />
+                </li>
               </ul>
             </div>
             <div>

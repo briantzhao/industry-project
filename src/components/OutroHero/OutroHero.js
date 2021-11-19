@@ -1,6 +1,6 @@
 import { Component } from "react";
 import product from "../../assets/images/Product card.svg";
-import "../OutroHero/OutroHero.scss";
+import "./OutroHero.scss";
 
 function OutroHero() {
   return (
