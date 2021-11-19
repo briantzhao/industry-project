@@ -21,6 +21,7 @@ import check from "../../assets/check icon.svg";
 import excl from "../../assets/excl icon.svg";
 import roses from "../../assets/roses.svg";
 import vacation from "../../assets/vacation.svg";
+import { Link } from "react-router-dom";
 
 export default class QuizPage extends Component {
   state = {
@@ -328,7 +329,9 @@ export default class QuizPage extends Component {
             </button>
           )}
           {this.state.finished ? (
-            <button className="buttons__single">Finish the Quiz</button>
+            <Link to="/outro">
+              <button className="buttons__single">Finish the Quiz</button>
+            </Link>
           ) : (
             <button
               className="buttons__single"

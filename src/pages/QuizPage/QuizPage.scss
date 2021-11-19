@@ -5,6 +5,10 @@
   box-sizing: border-box;
   font-family: $regular;
 }
+
+a {
+  text-decoration: none;
+}
 .quiz {
   text-align: center;
   display: flex;
