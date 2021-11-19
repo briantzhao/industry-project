@@ -1,82 +1,47 @@
 [
   {
-    "question": "question 1",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "2"
+    "question": "The first transaction ever made using crypto was to purchase...",
+    "answer1": "A car",
+    "picture1": "../../assets/ethereum.svg",
+    "answer2": "Two pizzas",
+    "picture2": "../../assets/dogecoin.svg",
+    "answer3": "Roses",
+    "picture3": "../../assets/polkadot.svg",
+    "answer4": "A vacation",
+    "picture4": "../../assets/shibainu.svg",
+    "correct": "2",
+    "factRight": "The first real-world transaction using cryptocurrency was made back in 2010. Based on current value today, over $50,000 USD was given in exchange for two pizzas.",
+    "factRight2": "Nowadays, crypto is useful in many more way than just for picking up a bite to eat.",
+    "factWrong": "That's where you keep your hard-earned cash. Crypto is actually managed and stored a little bit differently..."
   },
   {
-    "question": "question 2",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "3"
+    "question": "Where do you store cryptocurrency?",
+    "answer1": "Savings account",
+    "picture1": "../../assets/bank.svg",
+    "answer2": "Cookie jar",
+    "picture2": "../../assets/cookiejar.svg",
+    "answer3": "Email inbox",
+    "picture3": "../../assets/email.svg",
+    "answer4": "Blockchain wallet",
+    "picture4": "../../assets/wallet.svg",
+    "correct": "4",
+    "factRight": "Your coins are stored in a digital wallet that ineracts with a blockchain - a network used to store information about cryptocurrency.",
+    "factRight2": "These wallets can come in many different forms, with each having their own address to send and receive coins to and from.",
+    "factWrong": "That's where you keep your hard-earned cash. Crypto is actually managed and stored a little bit differently..."
   },
   {
-    "question": "question 3",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "1"
-  },
-  {
-    "question": "question 4",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "4"
-  },
-  {
-    "question": "question 5",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "2"
-  },
-  {
-    "question": "question 6",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "2"
-  },
-  {
-    "question": "question 7",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "3"
-  },
-  {
-    "question": "question 8",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "1"
-  },
-  {
-    "question": "question 9",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "4"
-  },
-  {
-    "question": "question 10",
-    "answer1": "answer1",
-    "answer2": "answer2",
-    "answer3": "answer3",
-    "answer4": "answer4",
-    "correct": "3"
+    "question": "What is the most actively traded crypto coin worldwide?",
+    "answer1": "Bitcoin",
+    "picture1": "../../assets/bitcoin.svg",
+    "answer2": "Ethereum",
+    "picture2": "../../assets/ethereum2.svg",
+    "answer3": "Tether",
+    "picture3": "../../assets/tether.svg",
+    "answer4": "Dogecoin",
+    "picture4": "../../assets/dogecoin2.svg",
+    "correct": "1",
+    "factRight": "Being the first cryptocurrency ever created, Bitcoin has been rapidly growing in popularity since it came into existence in 2009.",
+    "factRight2": "As of 2021, over 40 million Americans own Bitcoin. Its value has risen by over 7,000% in the last 5 years alone!",
+    "factWrong": "That's where you keep your hard-earned cash. Crypto is actually managed and stored a little bit differently..."
   }
 ]

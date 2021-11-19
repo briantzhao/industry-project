@@ -1,0 +1,238 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+* {
+  box-sizing: border-box;
+  font-family: $regular;
+}
+
+.topnav {
+  font-family: $light;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  min-height: 4rem;
+  @include flex(flex-start, center);
+  box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
+  width: 100%;
+  & li {
+    margin-bottom: 0;
+  }
+}
+
+.topnav__header {
+  margin-left: 25px;
+}
+
+.topnav__header-text {
+  color: #000;
+  font-family: $regular;
+  font-size: 1.5rem;
+}
+
+.topnav__list-container {
+  display: flex;
+  justify-content: space-between;
+  width: 86%;
+  align-items: center;
+}
+
+.topnav__list {
+  list-style-type: none;
+  flex-wrap: wrap;
+  @include flex(space-between, center);
+  margin: 0 1.5rem;
+  font-family: $regular;
+  font-size: 1.2rem;
+}
+.topnav__list2 {
+  list-style-type: none;
+  flex-wrap: wrap;
+  @include flex(space-between, center);
+  margin-left: 2rem;
+  font-family: $bold;
+  font-size: 1.2rem;
+}
+
+.topnav__btn {
+  background-color: $green;
+  font-family: $bold;
+  border-radius: 58px;
+  padding: 12px 40px;
+}
+
+a {
+  text-decoration: none;
+}
+.quiz {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  background-color: white;
+  font-size: 52px;
+  text-align: left;
+}
+
+.question-box {
+  width: 864px;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  background-color: white;
+  text-align: left;
+  height: 124.8px;
+}
+
+.answer-box {
+  background-color: white;
+  width: 54rem;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__single {
+    box-shadow: 0px 2px 5px 0px rgba(19, 24, 44, 0.1);
+    border-radius: 20px;
+    width: 26.25rem;
+    height: 15.3125rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 26px;
+    &__title {
+      font-size: 24px;
+      font-weight: 700;
+    }
+    &__pic {
+      height: 200px;
+      width: 200px;
+    }
+    &:hover {
+      background-color: rgba(227, 235, 221, 1);
+    }
+    &:active {
+      background-color: #b9ccab;
+    }
+  }
+}
+
+.progress {
+  &__section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 864px;
+    margin-top: 2rem;
+  }
+
+  &__title {
+    font-size: 32px;
+    margin-bottom: 0;
+    font-weight: 700;
+  }
+  &-bar {
+    width: 34rem;
+  }
+}
+
+.buttons {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  gap: 272px;
+  background-color: black;
+  padding: 1rem 0;
+  padding-bottom: 3rem;
+  &__single {
+    padding: 27px 2rem;
+    border: none;
+    border-radius: 27px;
+    height: 2rem;
+    background-color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+  }
+}
+
+.modal {
+  position: relative;
+  top: 25%;
+  left: 31%;
+  height: 360px;
+  width: 820px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  &__main {
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    padding: 60px 85px 0px 85px;
+  }
+  &__title {
+    font-size: 48px;
+    margin: 0;
+    font-family: $bold;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  &--correct {
+    background-color: #78db80;
+    height: 524px;
+  }
+  &--incorrect {
+    background-color: #ff9595;
+  }
+  &__body {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__fact--true {
+    max-height: 200px;
+    max-width: 400px;
+    font-size: 24px;
+    font-weight: 700;
+    &--2 {
+      margin-top: 24px;
+    }
+  }
+  &__vid {
+    height: 198px;
+    width: 210px;
+    background-color: #727272;
+    border-radius: 20px;
+  }
+  &__fact {
+    font-size: 24px;
+    font-weight: 700;
+  }
+  &__button {
+    background-color: black;
+    color: white;
+    padding: 16px 2rem;
+    border: none;
+    border-radius: 27px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: 700;
+  }
+}

@@ -1,0 +1,64 @@
+@use "../../styles/variables" as *;
+h1 {
+  width: 450px;
+  padding: 0;
+  margin-left: 15%;
+  font-size: 50px;
+  font-family: $regular;
+}
+
+.hero {
+  display: flex;
+  background-color: #cdf360;
+  border-bottom: none;
+
+  &__box {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    flex-direction: column;
+    padding: 0;
+    width: 950px;
+
+    &--right {
+      align-self: center;
+    }
+
+    &--bot {
+      margin-top: 6%;
+      display: flex;
+      margin-left: 15%;
+    }
+  }
+
+  &__desc {
+    margin-top: 3%;
+    margin-left: 15%;
+    font-size: 24px;
+    font-weight: bolder;
+    line-height: 28px;
+    width: 450px;
+    color: black;
+  }
+
+  &__img {
+    padding-top: 5%;
+    width: 100%;
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9.5px 36px;
+    margin-left: 20px;
+
+    &--clear {
+      background-color: transparent;
+      border-radius: 58px;
+      padding: 9.5px 36px;
+      font-weight: bolder;
+      outline-color: black;
+    }
+  }
+}
