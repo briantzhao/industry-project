@@ -179,9 +179,14 @@ export default class QuizPage extends Component {
                   <img className="modal__icon" src={check} /> Correct!
                 </h2>
                 <div className="modal__body">
-                  <p className="modal__fact--true">
-                    {this.state.currentQ.factRight}
-                  </p>
+                  <div>
+                    <p className="modal__fact--true">
+                      {this.state.currentQ.factRight}
+                    </p>
+                    <p className="modal__fact--true modal__fact--true--2">
+                      {this.state.currentQ.factRight2}
+                    </p>
+                  </div>
                   {this.state.current === 0 && (
                     <img className="answer-box__single__pic" src={pizza} />
                   )}

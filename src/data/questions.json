@@ -10,7 +10,8 @@
     "answer4": "A vacation",
     "picture4": "../../assets/shibainu.svg",
     "correct": "2",
-    "factRight": "The first real-world transaction using cryptocurrency was made back in 2010. Based on current value today, over $50,000 USD was given in exchange for two pizzas.\n\nNowadays, crypto is useful in many more way than just for picking up a bite to eat.",
+    "factRight": "The first real-world transaction using cryptocurrency was made back in 2010. Based on current value today, over $50,000 USD was given in exchange for two pizzas.",
+    "factRight2": "Nowadays, crypto is useful in many more way than just for picking up a bite to eat.",
     "factWrong": "poop"
   },
   {
@@ -24,7 +25,8 @@
     "answer4": "Blockchain wallet",
     "picture4": "../../assets/wallet.svg",
     "correct": "4",
-    "factRight": "Your coins are stored in a digital wallet that ineracts with a blockchain - a network used to store information about cryptocurrency.\n\nThese wallets can come in many different forms, with each having their own address to send and receive coins to and from.",
+    "factRight": "Your coins are stored in a digital wallet that ineracts with a blockchain - a network used to store information about cryptocurrency.",
+    "factRight2": "These wallets can come in many different forms, with each having their own address to send and receive coins to and from.",
     "factWrong": "poop"
   },
   {
@@ -38,7 +40,8 @@
     "answer4": "Dogecoin",
     "picture4": "../../assets/dogecoin2.svg",
     "correct": "1",
-    "factRight": "Being the first cryptocurrency ever created, Bitcoin has been rapidly growing in popularity since it came into existence in 2009. As of 2021, over 40 million Americans own Bitcoin. Its value has risen by over 7,000% in the last 5 years alone!",
+    "factRight": "Being the first cryptocurrency ever created, Bitcoin has been rapidly growing in popularity since it came into existence in 2009.",
+    "factRight2": "As of 2021, over 40 million Americans own Bitcoin. Its value has risen by over 7,000% in the last 5 years alone!",
     "factWrong": "poop"
   }
 ]

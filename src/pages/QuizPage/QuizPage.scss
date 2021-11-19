@@ -129,6 +129,10 @@
   &__fact--true {
     max-height: 200px;
     max-width: 400px;
+    font-size: 24px;
+    &--2 {
+      margin-top: 24px;
+    }
   }
   &__vid {
     height: 198px;
