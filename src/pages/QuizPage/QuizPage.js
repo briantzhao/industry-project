@@ -2,10 +2,25 @@ import { Component } from "react";
 import questionList from "../../data/questions.json";
 import "./QuizPage.scss";
 import Modal from "react-modal";
-
-// const ProgressBar = (props) => {
-//     const {bgcolor, completed}
-// }
+import ProgressBar from "../../components/ProgressBar/ProgressBar";
+import bank from "../../assets/bank.svg";
+import bitcoin from "../../assets/bitcoin.svg";
+import cookiejar from "../../assets/cookiejar.svg";
+import dogecoin from "../../assets/dogecoin.svg";
+import dogecoin2 from "../../assets/dogecoin2.svg";
+import email from "../../assets/email.svg";
+import ethereum from "../../assets/ethereum.svg";
+import ethereum2 from "../../assets/ethereum2.svg";
+import polkadot from "../../assets/polkadot.svg";
+import shibainu from "../../assets/shibainu.svg";
+import tether from "../../assets/tether.svg";
+import wallet from "../../assets/wallet.svg";
+import pizza from "../../assets/pizza.svg";
+import car from "../../assets/car.svg";
+import check from "../../assets/check icon.svg";
+import excl from "../../assets/excl icon.svg";
+import roses from "../../assets/roses.svg";
+import vacation from "../../assets/vacation.svg";
 
 export default class QuizPage extends Component {
   state = {
@@ -39,91 +54,259 @@ export default class QuizPage extends Component {
       // incorrect message and behavior
     }
   };
+  //   pic1 = () => {
+  //     switch (this.state.current) {
+  //       case 0:
+  //         return car;
+  //       case 1:
+  //         return bank;
+  //       case 2:
+  //         return bitcoin;
+  //       default:
+  //         return car;
+  //     }
+  //   };
+
+  //   pic2 = () => {
+  //     switch (this.state.current) {
+  //       case 0:
+  //         return pizza;
+  //       case 1:
+  //         return bank;
+  //       case 2:
+  //         return bitcoin;
+  //     }
+  //   };
+
+  //   pic3 = () => {
+  //     switch (this.state.current) {
+  //       case 0:
+  //         return roses;
+  //       case 1:
+  //         return email;
+  //       case 2:
+  //         return tether;
+  //     }
+  //   };
+
+  //   pic4 = () => {
+  //     switch (this.state.current) {
+  //       case 0:
+  //         return vacation;
+  //       case 1:
+  //         return wallet;
+  //       case 2:
+  //         return dogecoin;
+  //     }
+  //   };
 
   tryAgain = () => {
     this.setState({ currentQ: this.state.questions[0] });
   };
 
+  handleClick = (forward) => {
+    if (forward) {
+      if (this.state.current === this.state.questions.length - 1) {
+        this.setState({ finished: true });
+        return;
+      }
+      this.setState({ current: this.state.current + 1 }, () => {
+        this.setState({ currentQ: this.state.questions[this.state.current] });
+      });
+      return;
+    }
+    this.setState({ finished: false });
+    this.setState({ current: this.state.current - 1 }, () => {
+      this.setState({ currentQ: this.state.questions[this.state.current] });
+    });
+  };
+
   render() {
     return (
       <div className="quiz">
+        <div className="progress__section">
+          <p className="progress__title">
+            Question {this.state.current + 1} of {this.state.questions.length}
+          </p>
+          <div className="progress-bar">
+            <ProgressBar
+              bgcolor="#05C507"
+              completed={
+                ((this.state.current + 1) / this.state.questions.length) * 100
+              }
+            />
+          </div>
+        </div>
         {/* <h1 className="title">Do You Know Crypto?</h1> */}
         <article className="question-box">
-          <h2>{this.state.currentQ.question}</h2>
-          {this.state.finished && (
+          <h2 className="title">{this.state.currentQ.question}</h2>
+          {/* {this.state.finished && (
             <section className="question-box__results">
               <h1>Finish!</h1>
               <button>Learn More About Crypto!</button>
               <button onClick={this.tryAgain}>Try Again</button>
             </section>
-          )}
-          <Modal isOpen={this.state.modalOpen} ariaHideApp={false}>
+          )} */}
+          <Modal
+            className={
+              this.state.correct
+                ? "modal modal--correct"
+                : "modal modal--incorrect"
+            }
+            isOpen={this.state.modalOpen}
+            ariaHideApp={false}
+          >
             {this.state.correct ? (
-              <>
-                <p>Correct!</p>
-                <p>{this.state.currentQ.fact}</p>
-              </>
+              <div className="modal__main">
+                <h2 className="modal__title">
+                  <img className="modal__icon" src={check} /> Correct!
+                </h2>
+                <div className="modal__body">
+                  <p className="modal__fact--true">
+                    {this.state.currentQ.factRight}
+                  </p>
+                  <div className="modal__vid"></div>
+                </div>
+              </div>
             ) : (
-              <p>Sorry!</p>
+              <div className="modal__main">
+                <h2 className="modal__title">
+                  <img className="modal__icon" src={excl} /> Almost...
+                </h2>
+                <p className="modal__fact">{this.state.currentQ.factWrong}</p>
+              </div>
             )}
             <button
+              className="modal__button"
               onClick={() => {
                 this.setState({ modalOpen: false });
               }}
             >
-              {this.state.correct ? "Next" : "Try Again"}
+              {this.state.correct ? "Next Question" : "Try Again"}
             </button>
           </Modal>
         </article>
         <article className="answer-box">
-          <section
-            className="answer-box__single"
-            onClick={
-              this.state.finished
-                ? ""
-                : () => {
-                    this.clickAnswer(1);
-                  }
-            }
-          >
-            <p>{this.state.currentQ.answer1}</p>
-          </section>
-          <section
-            className="answer-box__single"
-            onClick={
-              this.state.finished
-                ? ""
-                : () => {
-                    this.clickAnswer(2);
-                  }
-            }
-          >
-            <p>{this.state.currentQ.answer2}</p>
-          </section>
-          <section
-            className="answer-box__single"
-            onClick={
-              this.state.finished
-                ? ""
-                : () => {
-                    this.clickAnswer(3);
-                  }
-            }
-          >
-            <p>{this.state.currentQ.answer3}</p>
-          </section>
-          <section
-            className="answer-box__single"
-            onClick={
-              this.state.finished
-                ? ""
-                : () => {
-                    this.clickAnswer(4);
-                  }
-            }
-          >
-            <p>{this.state.currentQ.answer4}</p>
-          </section>
+          <div className="answer-box__row">
+            <section
+              className="answer-box__single"
+              onClick={
+                this.state.finished
+                  ? ""
+                  : () => {
+                      this.clickAnswer(1);
+                    }
+              }
+            >
+              <p className="answer-box__single__title">
+                {this.state.currentQ.answer1}
+              </p>
+              {this.state.current === 0 && (
+                <img className="answer-box__single__pic" src={car} />
+              )}
+              {this.state.current === 1 && (
+                <img className="answer-box__single__pic" src={bank} />
+              )}
+              {this.state.current === 2 && (
+                <img className="answer-box__single__pic" src={bitcoin} />
+              )}
+            </section>
+            <section
+              className="answer-box__single"
+              onClick={
+                this.state.finished
+                  ? ""
+                  : () => {
+                      this.clickAnswer(2);
+                    }
+              }
+            >
+              <p className="answer-box__single__title">
+                {this.state.currentQ.answer2}
+              </p>
+              {this.state.current === 0 && (
+                <img className="answer-box__single__pic" src={pizza} />
+              )}
+              {this.state.current === 1 && (
+                <img className="answer-box__single__pic" src={cookiejar} />
+              )}
+              {this.state.current === 2 && (
+                <img className="answer-box__single__pic" src={ethereum} />
+              )}
+            </section>
+          </div>
+          <div className="answer-box__row">
+            <section
+              className="answer-box__single"
+              onClick={
+                this.state.finished
+                  ? ""
+                  : () => {
+                      this.clickAnswer(3);
+                    }
+              }
+            >
+              <p className="answer-box__single__title">
+                {this.state.currentQ.answer3}
+              </p>
+              {this.state.current === 0 && (
+                <img className="answer-box__single__pic" src={roses} />
+              )}
+              {this.state.current === 1 && (
+                <img className="answer-box__single__pic" src={email} />
+              )}
+              {this.state.current === 2 && (
+                <img className="answer-box__single__pic" src={tether} />
+              )}
+            </section>
+            <section
+              className="answer-box__single"
+              onClick={
+                this.state.finished
+                  ? ""
+                  : () => {
+                      this.clickAnswer(4);
+                    }
+              }
+            >
+              <p className="answer-box__single__title">
+                {this.state.currentQ.answer4}
+              </p>
+              {this.state.current === 0 && (
+                <img className="answer-box__single__pic" src={vacation} />
+              )}
+              {this.state.current === 1 && (
+                <img className="answer-box__single__pic" src={wallet} />
+              )}
+              {this.state.current === 2 && (
+                <img className="answer-box__single__pic" src={dogecoin} />
+              )}
+            </section>
+          </div>
+        </article>
+        <article className="buttons">
+          {this.state.current !== 0 && (
+            <button
+              className="buttons__single"
+              onClick={() => {
+                this.handleClick(false);
+              }}
+            >
+              {"<"} Back
+            </button>
+          )}
+          {this.state.finished ? (
+            <button className="buttons__single">Finish the Quiz</button>
+          ) : (
+            <button
+              className="buttons__single"
+              onClick={() => {
+                this.handleClick(true);
+              }}
+            >
+              Skip {">"}
+            </button>
+          )}
         </article>
       </div>
     );
