@@ -3,9 +3,9 @@ import questionList from "../../data/questions.json";
 import "./QuizPage.scss";
 import Modal from "react-modal";
 
-const ProgressBar = (props) => {
-    const {bgcolor, completed}
-}
+// const ProgressBar = (props) => {
+//     const {bgcolor, completed}
+// }
 
 export default class QuizPage extends Component {
   state = {
@@ -49,31 +49,31 @@ export default class QuizPage extends Component {
       <div className="quiz">
         {/* <h1 className="title">Do You Know Crypto?</h1> */}
         <article className="question-box">
-        <h2>{this.state.currentQ.question}</h2>
-        {this.state.finished && (
-          <section className="question-box__results">
-            <h1>Finish!</h1>
-            <button>Learn More About Crypto!</button>
-            <button onClick={this.tryAgain}>Try Again</button>
-          </section>
-        )}
-        <Modal isOpen={this.state.modalOpen} ariaHideApp={false}>
-          {this.state.correct ? (
-            <>
-              <p>Correct!</p>
-              <p>{this.state.currentQ.fact}</p>
-            </>
-          ) : (
-            <p>Sorry!</p>
+          <h2>{this.state.currentQ.question}</h2>
+          {this.state.finished && (
+            <section className="question-box__results">
+              <h1>Finish!</h1>
+              <button>Learn More About Crypto!</button>
+              <button onClick={this.tryAgain}>Try Again</button>
+            </section>
           )}
-          <button
-            onClick={() => {
-              this.setState({ modalOpen: false });
-            }}
-          >
-            {this.state.correct ? "Next" : "Try Again"}
-          </button>
-        </Modal>
+          <Modal isOpen={this.state.modalOpen} ariaHideApp={false}>
+            {this.state.correct ? (
+              <>
+                <p>Correct!</p>
+                <p>{this.state.currentQ.fact}</p>
+              </>
+            ) : (
+              <p>Sorry!</p>
+            )}
+            <button
+              onClick={() => {
+                this.setState({ modalOpen: false });
+              }}
+            >
+              {this.state.correct ? "Next" : "Try Again"}
+            </button>
+          </Modal>
         </article>
         <article className="answer-box">
           <section
