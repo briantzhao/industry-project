@@ -6,19 +6,24 @@
   margin-top: 3%;
   overflow-x: scroll;
   overflow-y: hidden;
-  //   white-space: nowrap;
+  white-space: nowrap;
+
+  &--2 {
+  }
 
   &__box {
     border: 1px solid green;
     border-radius: 12px;
     width: 20%;
+    margin-bottom: 5%;
     padding: 1%;
   }
 
   &__avatar {
-    height: 36px;
-    width: 36px;
+    height: 48px;
+    width: 48px;
     border-radius: 50%;
+    margin-right: 5px;
   }
 
   &__sub-box {
@@ -28,6 +33,6 @@
 
   &__txt {
     margin-bottom: 5px;
-    width: 100%;
+    color: black;
   }
 }
