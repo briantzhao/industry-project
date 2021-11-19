@@ -7,7 +7,7 @@ function OutroHero(){
        <header>
            <section className="hero">
                <div className="hero__box">
-                   <h1>Looks like you're ready to go</h1>
+                   <h1 className="hero__title">Looks like you're ready to go</h1>
                    <p className="hero__desc">That was fun right? Feel free to dive a little deeper on crypto, or get started right away.</p>
                    <div className="hero__box--bot">
                        <button className="hero__btn--clear">Learn more</button>
