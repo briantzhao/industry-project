@@ -11,6 +11,7 @@ p {
 
   &__form {
     margin-bottom: 5%;
+    position: relative;
   }
 
   &__txt {
@@ -35,9 +36,9 @@ p {
     font-size: 15px;
     font-weight: bolder;
     height: 35px;
-    // width: 10%;
-    // position: absolute;
-    // top: 33%;
-    // right: 4.5%;
+    width: 25%;
+    position: absolute;
+    top: 33%;
+    right: 7%;
   }
 }
