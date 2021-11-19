@@ -1,15 +1,12 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
-
 * {
   font-family: $light;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
 /* Header Navigation */
-
 .topnav {
   background-color: #fff;
   min-height: 4rem;
@@ -17,24 +14,20 @@
   box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
   width: 100%;
 }
-
 .topnav__header {
   margin-left: 25px;
 }
-
 .topnav__header-text {
   color: #000;
   font-family: $regular;
   font-size: 1.5rem;
 }
-
 .topnav__list-container {
   display: flex;
   justify-content: space-between;
   width: 86%;
   align-items: center;
 }
-
 .topnav__list {
   list-style-type: none;
   flex-wrap: wrap;
@@ -48,52 +41,47 @@
   flex-wrap: wrap;
   @include flex(space-between, center);
   margin-left: 2rem;
+  margin-bottom: 0;
   font-family: $bold;
   font-size: 1.2rem;
 }
-
 .topnav__btn {
   background-color: $green;
   font-family: $bold;
   border-radius: 58px;
   padding: 12px 40px;
 }
-
 // Hero
-
-.hero {
+.intro__hero {
   height: 650px;
   width: 100%;
   background-color: $bg-green;
   border-bottom: 1px solid black;
 }
-
 hr {
   border-top: 1px solid black;
 }
-
-h1 {
-  padding-left: 100px;
+.intro__hero-header {
+  margin-left: 100px;
   position: relative;
   font-size: 50px;
   font-family: $regular;
-  width: 40%;
+  width: 30%;
   padding-bottom: 40px;
   line-height: 60px;
 }
-
 .top-header {
   font-size: 1.9rem;
   padding: 20px 25px;
+  text-align: left;
 }
-
 .top-header__caption {
+  text-align: left;
   padding-left: 100px;
   width: 40%;
   font-size: 1.5rem;
 }
-
-.hero__btn {
+.intro__hero-btn {
   background-color: #000;
   color: #fff;
   border-radius: 58px;
@@ -107,17 +95,14 @@ h1 {
     opacity: 80%;
   }
 }
-
 .hero__image {
   position: absolute;
   top: 100px;
   right: 60px;
 }
-
 .card-section {
   @include flex-center;
 }
-
 .card1 {
   display: inline-block;
   height: 500px;
@@ -152,7 +137,6 @@ h1 {
     box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
   }
 }
-
 .card2 {
   display: inline-block;
   padding: 45px 25px;
@@ -186,12 +170,11 @@ h1 {
     box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
   }
 }
-
 .card__q {
   font-size: 32px;
   font-family: $regular;
+  color: black;
 }
-
 .card__readmore {
   font-size: 14px;
   font-family: $bold;

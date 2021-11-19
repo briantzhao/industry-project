@@ -64,25 +64,24 @@ export default class HomePage extends React.Component {
         </nav>
 
         {/* Hero */}
-        <section className="hero">
+        <section className="intro__hero">
           <h2 className="top-header">Crypto 101</h2>
           <hr />
           <br />
           <br />
           <br />
           <br />
-          <h1>The currency of the future</h1>
+          <h1 className="intro__hero-header">The currency of the future</h1>
           <h3 className="top-header__caption">
             You've heard about it, but how much do you really know about
             cryptocurrency? Test your knowledge and find out if you're ready to
             start investing.
           </h3>
-
           <br />
           <br />
           <br />
           <Link to="/quiz">
-            <button className="hero__btn">Take our crypto quiz</button>
+            <button className="intro__hero-btn">Take our crypto quiz</button>
           </Link>
           <img
             src="https://learn.robinhood.com/_next/image?url=%2F_next%2Fstatic%2Fimages%2Fhero-journey__c58375aab2212723e510a286b42f9567.svg&w=3840&q=75"
@@ -95,7 +94,6 @@ export default class HomePage extends React.Component {
         <br />
         <br />
         <br />
-
         <article className="card-section">
           <ReactCardFlip
             isFlipped={this.state.isFlipped1}
@@ -158,7 +156,6 @@ export default class HomePage extends React.Component {
             </div>
           </ReactCardFlip>
         </article>
-
         <br />
         <br />
         <br />

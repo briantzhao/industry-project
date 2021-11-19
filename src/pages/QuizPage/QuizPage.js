@@ -145,9 +145,11 @@ export default class QuizPage extends Component {
     return (
       <>
         <nav className="topnav">
-          <div className="topnav__header">
-            <img src={Logo} alt="logo" />
-          </div>
+          <Link to="/home">
+            <div className="topnav__header">
+              <img src={Logo} alt="logo" />
+            </div>
+          </Link>
           <div className="topnav__list-container">
             <div>
               <ul className="topnav__list">

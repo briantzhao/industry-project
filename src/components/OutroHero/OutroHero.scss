@@ -1,7 +1,10 @@
+@use "../../styles/variables" as *;
 h1 {
-  width: 70%;
+  width: 450px;
   padding: 0;
   margin-left: 15%;
+  font-size: 50px;
+  font-family: $regular;
 }
 
 .hero {
@@ -10,9 +13,11 @@ h1 {
   border-bottom: none;
 
   &__box {
-    margin-top: 15%;
+    margin-top: 10%;
+    margin-bottom: 10%;
     flex-direction: column;
     padding: 0;
+    width: 950px;
 
     &--right {
       align-self: center;
@@ -31,7 +36,7 @@ h1 {
     font-size: 24px;
     font-weight: bolder;
     line-height: 28px;
-    width: 80%;
+    width: 450px;
     color: black;
   }
 

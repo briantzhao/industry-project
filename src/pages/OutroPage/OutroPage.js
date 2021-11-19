@@ -3,14 +3,17 @@ import Footer from "../../components/Footer/Footer";
 import OutroHero from "../../components/OutroHero/OutroHero";
 import OutroMain from "../../components/OutroMain/OutroMain";
 import Logo from "../../assets/feather-logo.svg";
+import { Link } from "react-router-dom";
 
 function OutroPage() {
   return (
     <>
       <nav className="topnav">
-        <div className="topnav__header">
-          <img src={Logo} alt="logo" />
-        </div>
+        <Link to="/home">
+          <div className="topnav__header">
+            <img src={Logo} alt="logo" />
+          </div>
+        </Link>
         <div className="topnav__list-container">
           <div>
             <ul className="topnav__list">
