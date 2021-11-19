@@ -2,10 +2,11 @@ import linkedin from '../../assets/icons/linkedin.svg';
 import facebook from '../../assets/icons/facebook.svg';
 import instagram from '../../assets/icons/instagram.svg';
 import twitter from '../../assets/icons/twitter.svg';
+import '../SocialMedia/SocialMedia.scss';
 
 export default function SocialMedia(){
     return(
-        <ul>
+        <ul className="socials">
             <li>
                 <a target="_blank" href="https://www.linkedin.com/company/robinhood/"><img src={linkedin} alt="linkedin"/></a>
             </li>

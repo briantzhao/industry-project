@@ -1,0 +1,37 @@
+li {
+  list-style-type: none;
+  margin-bottom: 10%;
+}
+
+.footer {
+  display: flex;
+  background-color: black;
+  color: white;
+  padding: 48px 36px 36px 36px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: sans-serif;
+
+  &__box {
+    display: flex;
+    width: 70%;
+
+    // &--right {
+    //   margin-right: 0;
+    // }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &--right {
+      text-align: right;
+    }
+  }
+
+  &__item {
+    margin-bottom: 5%;
+  }
+}

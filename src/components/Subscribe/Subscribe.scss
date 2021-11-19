@@ -1,0 +1,43 @@
+@use "../../styles/variables" as *;
+
+p {
+  color: grey;
+  margin-top: 2%;
+}
+
+.sub {
+  width: 90%;
+  margin-left: 12.5%;
+
+  &__form {
+    margin-bottom: 5%;
+  }
+
+  &__txt {
+    border-radius: 20px;
+    border-style: unset;
+    padding: 2.5%;
+    width: 95%;
+    margin-top: 3%;
+    outline: none;
+    background-color: rgb(44, 44, 44);
+
+    &::placeholder {
+      margin-left: 12px;
+    }
+  }
+
+  &__btn {
+    background-color: $green;
+    border-style: unset;
+    padding: 8px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    height: 35px;
+    width: 10%;
+    position: absolute;
+    top: 33%;
+    right: 4.5%;
+  }
+}

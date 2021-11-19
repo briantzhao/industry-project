@@ -1,12 +1,15 @@
-import snacks from '../../assets/images/robinhood-snacks.svg';
+import snacks from '../../assets/images/snacks.svg';
+import '../Subscribe/Subscribe.scss';
+
 export default function Subscribe(){
     return(
-        <>
-        <img src={snacks} />
+        <div className="sub">
+        <img src={snacks} alt="snacks"/>
         <p>The 3-minute newsletter with fresh takes on the financial news you need to start your day.</p>
-        <form>
-            <input type="submit" id="email" value="submit" placeholder="name@email.com"></input>
+        <form className="sub__form">
+            <input className="sub__txt" type="text" id="email" placeholder="name@email.com"></input>
+            <input className="sub__btn" type="submit" value="Subscribe"></input>
         </form>
-        </>
+        </div>
     )
 }
