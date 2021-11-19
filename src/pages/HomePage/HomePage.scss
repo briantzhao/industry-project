@@ -1,0 +1,124 @@
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+* {
+  font-family: $light;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Navigation */
+
+.topnav {
+  background-color: #fff;
+  min-height: 4rem;
+  @include flex(flex-start, center);
+  box-shadow: 0px 1px 4px 0px rgb(0 0 0 / 20%);
+}
+
+.topnav__header {
+  margin-left: 40px;
+}
+
+.topnav__header-text {
+  color: #000;
+  font-family: $regular;
+  font-size: 1.5rem;
+}
+
+.topnav__list-container {
+  padding-right: 5vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav__list {
+  list-style-type: none;
+  flex-wrap: wrap;
+  @include flex(flex-end, center);
+  margin: 0 1rem;
+  font-family: $regular;
+}
+
+.topnav__btn {
+  background-color: $green;
+  border-radius: 58px;
+  padding: 10px 20px;
+}
+
+// Hero
+
+.hero {
+  height: 600px;
+  width: 100%;
+  background-color: $bg-green;
+  border-bottom: 1px solid black;
+}
+
+hr {
+  border-top: 1px solid black;
+}
+
+h1 {
+  padding-left: 100px;
+  position: relative;
+  font-size: 50px;
+  font-family: $regular;
+  width: 40%;
+  padding-bottom: 40px;
+  line-height: 60px;
+}
+.top-header {
+  padding: 20px 40px;
+}
+
+h3 {
+  padding-left: 100px;
+  font-family: $regular;
+}
+
+.hero__btn {
+  background-color: #000;
+  color: #fff;
+  border-radius: 58px;
+  padding: 10px 20px;
+  font-family: $bold;
+  margin-left: 100px;
+  border: none;
+  height: 40px;
+}
+
+.hero__image {
+  position: absolute;
+  top: 100px;
+  right: 60px;
+}
+
+.card-section {
+  @include flex-center;
+}
+
+.card1 {
+  display: inline-block;
+  text-align: center;
+  height: 500px;
+  width: 300px;
+  background-color: $bg-green;
+  border-radius: 20px;
+  margin: 0 20px;
+  padding: 20px;
+  font-size: 2rem;
+  font-family: $regular;
+}
+
+.card2 {
+  display: inline-block;
+  text-align: center;
+  height: 500px;
+  width: 300px;
+  background-color: pink;
+  border-radius: 20px;
+  margin: 0 20px;
+  padding: 20px;
+}

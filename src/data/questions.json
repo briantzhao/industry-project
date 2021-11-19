@@ -5,7 +5,8 @@
     "answer2": "answer2",
     "answer3": "answer3",
     "answer4": "answer4",
-    "correct": "2"
+    "correct": "2",
+    "fact": "The severed head of a sea slug can grow a whole new body."
   },
   {
     "question": "question 2",
@@ -13,7 +14,8 @@
     "answer2": "answer2",
     "answer3": "answer3",
     "answer4": "answer4",
-    "correct": "3"
+    "correct": "3",
+    "fact": "The world's smallest reptile was first reported in 2021."
   },
   {
     "question": "question 3",
@@ -21,7 +23,8 @@
     "answer2": "answer2",
     "answer3": "answer3",
     "answer4": "answer4",
-    "correct": "1"
+    "correct": "1",
+    "fact": "The feeling of getting lost inside a mall is known as the Gruen transfer."
   },
   {
     "question": "question 4",
@@ -29,7 +32,8 @@
     "answer2": "answer2",
     "answer3": "answer3",
     "answer4": "answer4",
-    "correct": "4"
+    "correct": "4",
+    "fact": "Humans are the only animals that blush."
   },
   {
     "question": "question 5",
@@ -37,7 +41,8 @@
     "answer2": "answer2",
     "answer3": "answer3",
     "answer4": "answer4",
-    "correct": "2"
+    "correct": "2",
+    "fact": "There's no such thing as pear cider."
   },
   {
     "question": "question 6",
@@ -45,7 +50,8 @@
     "answer2": "answer2",
     "answer3": "answer3",
     "answer4": "answer4",
-    "correct": "2"
+    "correct": "2",
+    "fact": "Goosebumps are meant to ward off predators."
   },
   {
     "question": "question 7",
@@ -53,7 +59,8 @@
     "answer2": "answer2",
     "answer3": "answer3",
     "answer4": "answer4",
-    "correct": "3"
+    "correct": "3",
+    "fact": "The moon has moonquakes."
   },
   {
     "question": "question 8",
@@ -61,7 +68,8 @@
     "answer2": "answer2",
     "answer3": "answer3",
     "answer4": "answer4",
-    "correct": "1"
+    "correct": "1",
+    "fact": "The heads on Easter Island have bodies."
   },
   {
     "question": "question 9",
@@ -69,7 +77,8 @@
     "answer2": "answer2",
     "answer3": "answer3",
     "answer4": "answer4",
-    "correct": "4"
+    "correct": "4",
+    "fact": "Some sea snakes can breathe through their skin."
   },
   {
     "question": "question 10",
@@ -77,6 +86,7 @@
     "answer2": "answer2",
     "answer3": "answer3",
     "answer4": "answer4",
-    "correct": "3"
+    "correct": "3",
+    "fact": "Many feet bones don't harden until you're an adult."
   }
 ]
